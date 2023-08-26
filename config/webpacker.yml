@@ -46,6 +46,8 @@ default: &default
     - .gif
     - .jpeg
     - .jpg
+    - .less
+    - .module.less
 
 development:
   <<: *default
@@ -70,7 +72,6 @@ development:
       'Access-Control-Allow-Origin': '*'
     watch_options:
       ignored: '**/node_modules/**'
-
 
 test:
   <<: *default
